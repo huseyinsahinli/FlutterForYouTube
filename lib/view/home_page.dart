@@ -17,23 +17,39 @@ class HomePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CustomContainer(string: "c1"),
-          CustomContainer(string: "c2"),
-          Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Column(
-                  children: [
-                    CustomContainer(string: "cr1"),
-                    CustomContainer(string: "cr2"),
-                  ],
-                ),
-                CustomContainer(string: "r3"),
-                CustomContainer(string: "r3"),
-              ],
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Column(
+                children: [
+                  CustomContainer(),
+                  CustomContainer(),
+                  CustomContainer(),
+                  CustomContainer(),
+                ],
+              ),
+              CustomContainer(),
+              CustomContainer(),
+              CustomContainer(),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Column(
+                children: [
+                  CustomContainer(),
+                  CustomContainer(),
+                  CustomContainer(),
+                  CustomContainer(),
+                ],
+              ),
+              CustomContainer(),
+              CustomContainer(),
+              CustomContainer(),
+            ],
           ),
         ],
       ),
